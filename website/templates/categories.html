@@ -1,0 +1,35 @@
+{% extends "base.html" %} {% block title %}Categories{% endblock %} {% block  content %}
+
+<form method ="POST" >
+    <div id="middle-categories" class="panel panel-default">
+
+        <div class="panel-heading">
+            <h3>Categories</h3>
+        </div>
+
+
+        <div class="panel-body">
+            <a href={{url_for('auth.vote')}}><h4>President</h4> </a>
+        </div>
+
+        <div class="panel-body">
+            <a href="/Vote.html"> <h4>Sports Director</h4> </a>
+        </div>
+
+        <div class="panel-body">
+            <a href="/Vote.html"> <h4>Vice-President</h4> </a>
+        </div>
+
+        <div class="panel-body">
+           <a href="/Vote.html"> <h4>Chaplain</h4> </a>
+        </div>
+
+        <div class="panel-body">
+            <a href="/Vote.html"> <h4>Finanacialist</h4> </a>
+        </div>
+
+    </div>
+
+</form>
+
+{% endblock %}

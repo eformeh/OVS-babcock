@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form method = "GET">
+
+    <div class="vote-middle">
+        <div class="card">
+                <div class="card-body">
+
+                    <p>Users are meant to be displayed here</p>
+{%for candidates in candidate %}
+                        <h5 id="users.fullname" class="card-title"> name:yes {% print(candidate.json()) %} </h5>
+                        <p  class="card-text"> manifesto: {{
+    print(candidate.json()) }}</p>
+                        <a href="/Vote" id="vote-btn" class="btn btn-primary"> Vote</a>
+{% endfor%}
+                </div>
+        </div>
+    </div>
+
+</form>
+
+</body>
+</html>
